@@ -4,104 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <a href="./index.html">WebStudio</a>
-            <ul>
-                <li><a href="#studio">Studio</a></li>
-                <li><a href="./portfolio.html">Portfolio</a></li>
-                <li><a href="#contacts">Contacts</a></li>
+    <header class="page-header">
+        <nav class="menu">
+            <a class="home-link link" href="./index.html">WebStudio</a>
+            <ul class="menu list">
+                <li class="menu-item">
+                    <a class="menu-link link" href="#studio">Studio</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link link" href="./portfolio.html">Portfolio</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link link" href="#contacts">Contacts</a>
+                </li>
             </ul>
         </nav>
-        <ul>
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <ul class="list">
+            <li><a class="contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="contacts link" href="tel:+12127724150">+1 212-772-4150</a></li>
         </ul>
     </header>
+
     <main>
-        <section>
-        <h1>EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
-        <button type="button">Request our service</button>
+        <!-- hero -->
+        <section class="hero">
+        <h1 class="title">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
+        <button class="hero-button" type="button">Request our service</button>
         </section>
 
-        <section>
-            <h2>Our features</h2>
-            <ul>
+        <section class="features">
+            <h2 class="visually-hidden">Our features</h2>
+            <ul class="list">
                 <li>
-                    <h3>ATTENTION TO DETAILS</h3>
-                    <p>We go into all the details and processes of your business to develop a customized solution.</p>
+                    <h3 class="features-title">ATTENTION TO DETAILS</h3>
+                    <p class="features-text">We go into all the details and processes of your business to develop a customized solution.</p>
                 </li>
                 <li>
-                    <h3>PUNCTUALITY</h3>
-                    <p>With us, you can feel safe and secure. An important principle of the company: respect your time and respect the agreed
+                    <h3 class="features-title">PUNCTUALITY</h3>
+                    <p class="features-text">With us, you can feel safe and secure. An important principle of the company: respect your time and respect the agreed
                     deadlines.</p>
                 </li>
                 <li>
-                    <h3>PLANNING</h3>
-                    <p>You will be able to observe and participate in every phase of solution development and implementation.</p>
+                    <h3 class="features-title">PLANNING</h3>
+                    <p class="features-text">You will be able to observe and participate in every phase of solution development and implementation.</p>
                 </li>   
                 <li>
-                    <h3>MODERN TECHNOLOGIES</h3>
-                    <p>We use innovative tools to solve assigned tasks. It's time to simplify work processes.</p>
-                </li>
-            </ul>
-        </section>
-
-        <section id="studio">
-            <h2>What we do</h2>
-            <ul>
-                <li>
-                    <img src="./images/img-1.jpg" alt="Code development using tablet" width="370">
-                </li>
-                <li>
-                    <img src="./images/img-2.jpg" alt="Interface options on screen" width="370">
-                </li>
-                <li>
-                    <img src="./images/img-3.jpg" alt="Colors pallet on tablet" width="370">
+                    <h3 class="features-title">MODERN TECHNOLOGIES</h3>
+                    <p class="features-text">We use innovative tools to solve assigned tasks. It's time to simplify work processes.</p>
                 </li>
             </ul>
         </section>
 
         <section>
-            <h2>Our Team</h2>
-            <ul>
+            <h2 class="tasks" class="tasks-title">What we do</h2>
+            <ul class="tasks-list list">
                 <li>
+                    <img class="tasks-img" src="./images/img-1.jpg" alt="Code development using tablet" width="370">
+                </li>
+                <li>
+                    <img class="tasks-img" src="./images/img-2.jpg" alt="Interface options on screen" width="370">
+                </li>
+                <li>
+                    <img class="tasks-img" src="./images/img-3.jpg" alt="Colors pallet on tablet" width="370">
+                </li>
+            </ul>
+        </section>
+
+        <section class="team">
+            <h2 class="team-title">Our Team</h2>
+            <ul class="list">
+                <li class="team-card">
                     <img src="./images/team-member-1.jpg" alt="igor-demyanenko" width="270">
-                    <h3>Игорь Демьяненко</h3>
-                    <p>Product Designer</p>
+                    <h3 class="team-member">Игорь Демьяненко</h3>
+                    <p class="team-function">Product Designer</p>
                 </li>
-                <li>
+                <li class="team-card">
                     <img src="./images/team-member-2.jpg" alt="olga-repina" width="270">
-                    <h3>Ольга Репина</h3>
-                    <p>Frontend Developer</p>
+                    <h3 class="team-member">Ольга Репина</h3>
+                    <p class="team-function">Frontend Developer</p>
                 </li>
-                <li>
+                <li class="team-card">
                     <img src="./images/team-member-3.jpg" alt="nikolay-tarasov" width="270">
-                    <h3>Николай Тарасов</h3>
-                    <p>Marketing</p>
+                    <h3 class="team-member">Николай Тарасов</h3>
+                    <p class="team-function">Marketing</p>
                 </li>
-                <li>
+                <li class="team-card">
                     <img src="./images/team-member-4.jpg" alt="mikhail-yermakov" width="270">
-                    <h3>Михаил Ермаков</h3>
-                    <p>UI Designer</p>
+                    <h3 class="team-member">Михаил Ермаков</h3>
+                    <p class="team-function">UI Designer</p>
                 </li>
             </ul>
         </section>
     </main>
+
     <footer id="contacts">
-        <a href="./index.html">WebStudio</a>
+        <a class="home-link link" href="./index.html">WebStudio</a>
             <address>
-                <ul>
-                    <li><a href="https://goo.gl/maps/tVKiY3Z6atngq88f9" target="_blank" rel="noopener noreferrer nofollow">
+                <ul class="list">
+                    <li><a class="address-link link"
+                        href="https://goo.gl/maps/tVKiY3Z6atngq88f9"
+                        target="_blank"
+                        rel="noopener noreferrer nofollow">
                         695 Park Ave, New York, NY 10065,<br>
                         United States</a>
                     </li>
-                    <li><a href="mailto:info@example.com">info@example.com</a></li>
-                    <li><a href="tel:+12127724150">+1 212-772-4150</a></li>             
+                    <li><a class="footer-mail link" href="mailto:info@example.com">info@example.com</a></li>
+                    <li><a class="footer-phone link" href="tel:+12127724150">+1 212-772-4150</a></li>             
                 </ul>
             </address>
     </footer>
+
 </body>
 </html>

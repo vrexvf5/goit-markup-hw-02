@@ -5,96 +5,117 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="./index.html">WebStudio</a>
-            <ul>
-                <li><a href="#studio">Studio</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contacts">Contacts</a></li>
+    <header class="page-header">
+        <nav class="menu">
+            <a class="home-link link" href="./index.html">WebStudio</a>
+            <ul class="menu list">
+                <li class="menu-item">
+                    <a class="menu-link link" href="./index.html">Studio</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link link" href="#contacts">Contacts</a>
+                </li>
             </ul>
         </nav>
-        <ul>
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <ul class="list">
+            <li><a class="contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="contacts link" href="tel:+12127724150">+1 212-772-4150</a></li>
         </ul>
     </header>
 
     <main>
-        <section>
-            <ul>
-                <li><a href="">All</a></li>
-                <li><a href="">Web-site</a></li>
-                <li><a href="">Apps</a></li>
-                <li><a href="">Design</a></li>
-                <li><a href="">Marketing</a></li>
+        <section class="portfolio filter">
+            <ul class="list">
+                <li>
+                    <button class="filter-button" type="button"><a class="filter-link link" href="">All</a></button>
+                </li>
+                <li>
+                    <button class="filter-button" type="button"><a class="filter-link link" href="">Web-site</a></button>
+                </li>
+                <li>
+                    <button class="filter-button" type="button"><a class="filter-link link" href="">Apps</a></button>
+                </li>
+                <li>
+                    <button class="filter-button" type="button"><a class="filter-link link" href="">Design</a></button>
+                </li>
+                <li>
+                    <button class="filter-button" type="button"><a class="filter-link link" href="">Marketing</a></button>
+                </li>
             </ul>
 
-            <ul>
-                <li>
+            <ul class="list">
+                <li class="project-card">
                     <img src="./images/portfolio-technoduck.jpg" alt="Laptop monitor" width="370">
-                    <h3>Technoduck</h3>
-                    <p>Web-site</p>
+                    <h3 class="example-title">Technoduck</h3>
+                    <p class="example-text">Web-site</p>
                 </li>
-                <li>
+                <li class="project-card">
                     <img src="./images/portfolio-poster-bb.jpg" alt="Basketball players" width="370">
-                    <h3>Poster New Orlean vs Golden Star</h3>
-                    <p>Design</p>
+                    <h3 class="example-title">Poster New Orlean vs Golden Star</h3>
+                    <p class="example-text">Design</p>
                 </li>
-                <li>
+                <li class="project-card">
                     <img src="./images/portfolio-seafood.jpg" alt="Seafood restoran poster" width="370">
-                    <h3>Seafood Restaurant</h3>
-                    <p>Apps</p>
+                    <h3 class="example-title">Seafood Restaurant</h3>
+                    <p class="example-text">Apps</p>
                 </li>
-                <li>
+                <li class="project-card">
                     <img src="./images/portfolio-headphones.jpg" alt="Headphones" width="370">
-                    <h3>Project Prime</h3>
-                    <p>Marketing</p>
+                    <h3 class="example-title">Project Prime</h3>
+                    <p class="example-text">Marketing</p>
                 </li>
-                <li>
+                <li class="project-card">
                     <img src="./images/portfolio-boxes.jpg" alt="Two boxes" width="370">
-                    <h3>Project Boxes</h3>
-                    <p>Apps</p>
+                    <h3 class="example-title">Project Boxes</h3>
+                    <p class="example-text">Apps</p>
                 </li>
-                <li>
+                <li class="project-card">
                     <img src="./images/portfolio-monitor.jpg" alt="Black monitor" width="370">
-                    <h3>Inspiration has no Borders</h3>
-                    <p>Web-site</p>
+                    <h3 class="example-title">Inspiration has no Borders</h3>
+                    <p class="example-text">Web-site</p>
                 </li>
-                <li>
+                <li class="project-card">
                     <img src="./images/portfolio-pages.jpg" alt="Magazine pages" width="370">
-                    <h3>Limited Edition</h3>
-                    <p>Design</p>
+                    <h3 class="example-title">Limited Edition</h3>
+                    <p class="example-text">Design</p>
                 </li>
-                <li>
+                <li class="project-card">
                     <img src="./images/portfolio-labeltag.jpg" alt="Label tag" width="370">
-                    <h3>Project LAB</h3>
-                    <p>Marketing</p>
+                    <h3 class="example-title">Project LAB</h3>
+                    <p class="example-text">Marketing</p>
                 </li>
-                <li>
+                <li class="project-card">
                     <img src="./images/portfolio-laptop.jpg" alt="Laptop" width="370">
-                    <h3>Growing Business</h3>
-                    <p>Apps</p>
+                    <h3 class="example-title">Growing Business</h3>
+                    <p class="example-text">Apps</p>
                 </li>
             </ul>
         </section>
-
     </main>
     
     <footer id="contacts">
-        <a href="./index.html">WebStudio</a>
+        <a class="home-link link" href="./index.html">WebStudio</a>
         <address>
-            <ul>
-                <li><a href="https://goo.gl/maps/tVKiY3Z6atngq88f9" target="_blank" rel="noopener noreferrer nofollow">
+            <ul class="list">
+                <li><a class="address-link link" href="https://goo.gl/maps/tVKiY3Z6atngq88f9" target="_blank"
+                        rel="noopener noreferrer nofollow">
                         695 Park Ave, New York, NY 10065,<br>
                         United States</a>
                 </li>
-                <li><a href="mailto:info@example.com">info@example.com</a></li>
-                <li><a href="tel:+12127724150">+1 212-772-4150</a></li>
+                <li><a class="footer-mail link" href="mailto:info@example.com">info@example.com</a></li>
+                <li><a class="footer-phone link" href="tel:+12127724150">+1 212-772-4150</a></li>
             </ul>
         </address>
     </footer>
+
 </body>
 </html>
