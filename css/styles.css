@@ -2,10 +2,14 @@
     --accent-color: #2196F3;
     --main-text-color: #212121;
     --secondary-text-color: #757575;
+    --main-background-color: #ffffff;
+    --secondary-background-color: #e5e5e5
 }
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
 }
 
 .link {
@@ -27,38 +31,62 @@ button {
 /* Studio */
 
 .page-header {
-    background-color: #ffffff;
+    background-color: var(--main-background-color);
 }
 
 .filter {
-    background-color: #E5E5E5;
+    background-color: var(--secondary-background-color);
 }
 
-.home-link {
+.home-link >.web {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.03em;
+    line-height: 1.19;
     color: var(--accent-color);
 }
 
-.menu, .contacts {
-    font-family: inherit;
+.home-link >.studio-up {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: #000000;
+}
+
+.home-link >.studio-down {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: #ffffff;
+}
+
+.menu-item .link {
     font-weight: 500;
-    font-size: 14px;
     line-height: 0.88;
     letter-spacing: 0.02em;
     color: var(--main-text-color);
 }
 
-.menu:hover,
-.menu:focus {
+.menu-item .link.current {
+    color: var(--accent-color)
+}
+
+.header-contacts {
+    font-weight: 500;
+    line-height: 0.88;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+}
+
+.menu-link:hover,
+.menu-link:focus {
     color: var(--accent-color);
 }
 
-.contacts:hover,
-.contacts:focus {
+.header-contacts:hover,
+.header-contacts:focus {
     color: var(--accent-color);
 }
 
@@ -66,8 +94,7 @@ button {
     background-color: #2F303A;
 }
 
-.hero {
-    font-family: inherit;
+.hero-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -88,7 +115,7 @@ button {
     background-color: var(--accent-color);
 }
 
-.hero, .hero-button {
+.hero-title, .hero-button {
     color: #ffffff;
 }
 
@@ -111,56 +138,44 @@ button {
 }
 
 .features-title {
-    font-family: inherit;
     font-weight: 700;
-    font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--main-text-color);
 }
 
 .features-text {
-    font-family: inherit;
-    font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--secondary-text-color);
+    color: var(--main-text-color);
 }
 
 .tasks, .team-title {
-    font-family: inherit;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--main-text-color);
 }
 
 .team-member {
-    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     /* identical to box height */
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--main-text-color);
 }
 
 .team-function {
-    font-family: inherit;
     font-size: 16px;
     line-height: 19px;
     /* identical to box height */
     text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--secondary-text-color);
+    color: var(--main-text-color);
 }
 
 .features, .tasks {
-    background-color: #E5E5E5;;
+    background-color: var(--main-background-color);
 }
 
 .team {
@@ -168,7 +183,7 @@ button {
 }
 
 .team-card {
-    background-color: #ffffff;
+    background-color: var(--main-background-color);
 }
 
 footer {
@@ -176,20 +191,14 @@ footer {
 }
 
 .address-link {
-    font-family: inherit;
     font-style: normal;
-    font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
     color: #FFFFFF;
 }
 
 .footer-mail, .footer-phone {
-    font-family: inherit;
     font-style: normal;
-    font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
 
@@ -216,9 +225,8 @@ footer {
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--main-text-color);
-    background-color: #F5F4FA;;
+    background-color: var(--secondary-background-color);
 }
 
 .filter-button:hover, 
@@ -228,7 +236,6 @@ footer {
 }
 
 .example-title {
-    font-family: inherit;
     font-weight: 700;
     font-size: 18px;
     line-height: 2.00;
@@ -237,13 +244,11 @@ footer {
 }
 
 .example-text {
-    font-family: inherit;
     font-size: 16px;
     line-height: 1.88;
-    letter-spacing: 0.03em;
     color: var(--secondary-text-color);
 }
 
 .project-card {
-    background-color: #ffffff;
+    background-color: var(--main-background-color);
 }
