@@ -1,7 +1,8 @@
 :root {
     --accent-color: #2196F3;
-    --main-text-color: #212121;
-    --secondary-text-color: #757575;
+    --main-text-color: #757575;
+    --headers-color: #212121;
+    --white-text-color: #ffffff;
     --main-background-color: #ffffff;
     --secondary-background-color: #e5e5e5
 }
@@ -10,6 +11,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     letter-spacing: 0.03em;
+    color: #757575;
 }
 
 .link {
@@ -38,55 +40,52 @@ button {
     background-color: var(--secondary-background-color);
 }
 
-.home-link >.web {
+.home-link .web,
+.home-link .studio-up,
+.home-link .studio-down {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+}
+
+.web {
     color: var(--accent-color);
 }
 
-.home-link >.studio-up {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    color: #000000;
+.studio-up {
+    color: var(--headers-color);
 }
 
-.home-link >.studio-down {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    color: #ffffff;
+.studio-down {
+    color: var(--white-text-color);
 }
 
 .menu-item .link {
     font-weight: 500;
-    line-height: 0.88;
+    line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--main-text-color);
+    color: var(--headers-color);
 }
 
 .menu-item .link.current {
     color: var(--accent-color)
 }
 
-.header-contacts {
+.header-contacts .mail, .header-contacts .phone {
     font-weight: 500;
-    line-height: 0.88;
+    line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--secondary-text-color);
+    color: var(--main-text-color);
 }
 
 .menu-link:hover,
-.menu-link:focus {
-    color: var(--accent-color);
-}
-
-.header-contacts:hover,
-.header-contacts:focus {
+.menu-link:focus,
+.header-contacts .mail:hover,
+.header-contacts .mail:focus,
+.header-contacts .phone:hover,
+.header-contacts .phone:focus
+ {
     color: var(--accent-color);
 }
 
@@ -116,7 +115,7 @@ button {
 }
 
 .hero-title, .hero-button {
-    color: #ffffff;
+    color: var(--white-text-color);
 }
 
 .hero-button:hover, 
@@ -137,16 +136,15 @@ button {
     margin: -1px;
 }
 
-.features-title {
+.features .title {
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
-    color: var(--main-text-color);
+    color: var(--headers-color);
 }
 
-.features-text {
+.features .text {
     line-height: 1.71;
-    color: var(--main-text-color);
 }
 
 .tasks, .team-title {
@@ -154,24 +152,22 @@ button {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    color: var(--main-text-color);
+    color: var(--headers-color);
 }
 
 .team-member {
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
-    /* identical to box height */
+    line-height: 1.19;
+    letter-spacing: 0.03em;
     text-align: center;
-    color: var(--main-text-color);
+    color: var(--headers-color);
 }
 
 .team-function {
     font-size: 16px;
-    line-height: 19px;
-    /* identical to box height */
+    line-height: 1.19;
     text-align: center;
-    color: var(--main-text-color);
 }
 
 .features, .tasks {
@@ -193,7 +189,7 @@ footer {
 .address-link {
     font-style: normal;
     line-height: 1.71;
-    color: #FFFFFF;
+    color: var(--white-text-color);
 }
 
 .footer-mail, .footer-phone {
@@ -225,28 +221,28 @@ footer {
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
-    color: var(--main-text-color);
+    color: var(--headers-color);
     background-color: var(--secondary-background-color);
 }
 
 .filter-button:hover, 
 .filter-button:focus {
-    color: #ffffff;
+    color: var(--white-text-color);
     background-color: var(--accent-color);;
 }
 
-.example-title {
+.project-list .title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2.00;
     letter-spacing: 0.06em;
-    color: var(--main-text-color);
+    color: var(--headers-color);
 }
 
-.example-text {
+.project-list .text {
     font-size: 16px;
     line-height: 1.88;
-    color: var(--secondary-text-color);
+    letter-spacing: 0.03em;
 }
 
 .project-card {
